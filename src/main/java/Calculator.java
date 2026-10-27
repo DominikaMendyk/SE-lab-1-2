@@ -23,6 +23,10 @@ public class Calculator {
     }
 
     double division(int a, int b){
+        if (b==0){
+            System.err.println("Error: Division by zero");
+            return Double.NaN;
+        }
         return ((double) a/b);
     }
 
